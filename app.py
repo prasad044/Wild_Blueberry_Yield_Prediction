@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 from PIL import Image 
 
 st.set_page_config(page_title='Wild Blueberry Yield Prediction', page_icon = 'https://cdn-icons-png.flaticon.com/512/7696/7696639.png', layout='wide')
-model=joblib.load(r'randomforest_blueberry_pollination_tuned_model.joblib')
+model=joblib.load('randomforest_blueberry_pollination_tuned_model.joblib')
 
 st.markdown(
     """
@@ -61,7 +61,7 @@ def main():
         st.write(f"The blueberry yield is : {pred}")
         st.balloons()
 def get_prediction(data):
-    model_path = r"randomforest_blueberry_pollination_tuned_model.joblib"
+    model_path = "randomforest_blueberry_pollination_tuned_model.joblib"
     model = joblib.load(model_path)
     return model.predict(data)
 
