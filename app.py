@@ -61,7 +61,7 @@ def main():
         st.write(f"The blueberry yield is : {pred}")
         st.balloons()
 def get_prediction(data):
-    model_path = r"F:\Projects\Wild Blueberry yield Prediction\randomforest_blueberry_pollination_tuned_model.joblib"
+    model_path = r"randomforest_blueberry_pollination_tuned_model.joblib"
     model = joblib.load(model_path)
     return model.predict(data)
 
