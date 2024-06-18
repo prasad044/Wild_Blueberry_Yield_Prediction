@@ -6,7 +6,6 @@ from sklearn.linear_model import LinearRegression
 from PIL import Image 
 
 st.set_page_config(page_title='Wild Blueberry Yield Prediction', page_icon = 'https://cdn-icons-png.flaticon.com/512/7696/7696639.png', layout='wide')
-model=joblib.load('randomforest_blueberry_pollination_tuned_model.joblib')
 
 st.markdown(
     """
